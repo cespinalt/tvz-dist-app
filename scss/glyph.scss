@@ -1,0 +1,29 @@
+.glyph {
+  display: inline-block;
+  margin: 0 18px;
+}
+
+.search-glyph {
+  @include set-size(36px, 36px);
+  background: url('../images/search-ico.png');
+}
+
+.star-glyph {
+  @include set-size(60px, 59px);
+  background: url('../images/star-ico.png');
+}
+
+.cart-glyph {
+  @include set-size(33px, 38px);
+  background: url('../images/cart-ico.png');
+}
+
+.categories-glyph {
+  @include set-size(64px, 57px);
+  background: url('../images/categories-ico.png');
+}
+
+.phonebook-glyph {
+  @include set-size(96px, 76px);
+  background: url('../images/phonebook-ico.png');
+}
