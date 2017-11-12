@@ -1,7 +1,7 @@
 %center {
+  display: block;
   margin-left: auto;
   margin-right: auto;
-  display: block;
 }
 
 %center-elements {
@@ -23,8 +23,8 @@
 %clearfix {
 
   &::after {
-    display: table;
-    content: "";
     clear: both;
+    content: "";
+    display: table;
   }
 }

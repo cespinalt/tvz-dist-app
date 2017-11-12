@@ -8,8 +8,8 @@ body {
 }
 
 header {
-  padding: 20px 0;
   margin-bottom: 116px;
+  padding: 20px 0;
 }
 
 .h3 {
@@ -30,6 +30,21 @@ header {
 }
 
 .logo-container {
-  @include fixed-width(246px);
   @extend %center;
+  @include fixed-width(246px);
+}
+
+.hero-container {
+  @extend %center-elements;
+  @extend %center;
+  @include fixed-width(482px);
+  margin-bottom: 65px;
+
+  & > img {
+    margin-bottom: 28px;
+  }
+}
+
+.main-content {
+  margin-bottom: 30px;
 }

@@ -1,0 +1,39 @@
+.header-menu {
+  @include float-element(right, 145px);
+  list-style: none;
+  padding: 0 0 20px;
+
+  li {
+    @extend %inline-block;
+  }
+
+}
+
+$dashboard-menu-item-color: #bbbaba;
+$dashboard-item-title-color: #0262bb;
+
+.dashboard-menu {
+  @extend %center-elements;
+  display: flex;
+  justify-content: space-evenly;
+
+  .menu-item {
+    @include fixed-width(277px);
+    background: #FFF;
+    border: 1px solid $dashboard-menu-item-color;
+    min-height: 207px;
+    padding: 15px;
+
+    i {
+      margin-top: 37px;
+    }
+  }
+
+  .title {
+    border-bottom: 1px solid $dashboard-menu-item-color;
+    color: $dashboard-item-title-color;
+    font-size: 16px;
+    margin-top: 0;
+    padding-bottom: 12px;
+  }
+}
