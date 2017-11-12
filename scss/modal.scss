@@ -1,0 +1,17 @@
+.overlay-shadow, .modal-box {
+  position: fixed;
+}
+
+.modal-box {
+  top: 5%;
+  left: 50%;
+  z-index: 20;
+}
+
+.overlay-shadow {
+  background: rgba(0, 0, 0, .5);
+  top: 0;
+  left: 0;
+  z-index: 10;
+  @include set-size(100%, 100%);
+}

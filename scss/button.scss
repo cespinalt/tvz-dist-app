@@ -1,0 +1,13 @@
+button {
+  border: none;
+  color: $btn-default-color;
+  font-size: $btn-font-size;
+  height: 41px;
+  @include fixed-width(181px);
+  @extend %uppercase;
+
+  &.default {
+    background: $primary-btn-color;
+    font-weight: 500;
+  }
+}

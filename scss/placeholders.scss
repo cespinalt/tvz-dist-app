@@ -1,0 +1,30 @@
+%center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+%center-elements {
+  text-align: center;
+}
+
+%block {
+  display: block;
+}
+
+%inline-block {
+  display: inline-block;
+}
+
+%uppercase {
+  text-transform: uppercase;
+}
+
+%clearfix {
+
+  &::after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+}

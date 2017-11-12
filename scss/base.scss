@@ -1,0 +1,35 @@
+body {
+  background: #FFF;
+  font-family: $primary-font-family;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+header {
+  padding: 20px 0;
+  margin-bottom: 116px;
+}
+
+.h3 {
+  font-size: $h3-size;
+}
+
+.center-wrapper {
+  @extend %center;
+  @include fixed-width(960px);
+}
+
+.center {
+  @extend %center;
+}
+
+.upcase {
+  @extend %uppercase;
+}
+
+.logo-container {
+  @include fixed-width(246px);
+  @extend %center;
+}

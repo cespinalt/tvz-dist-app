@@ -1,0 +1,25 @@
+@mixin input-size($width, $height,  $radius, $background) {
+  background: $background;
+  border-radius: $radius;
+  @include set-size($width, $height);
+}
+
+@mixin fixed-width($max-width) {
+  max-width: $max-width;
+  width: 100%;
+}
+
+@mixin float-element($direction, $width) {
+  float: $direction;
+  width: $width;
+}
+
+@mixin offset-top($top) {
+  position: relative;
+  top: $top;
+}
+
+@mixin set-size($width, $height) {
+  width: $width;
+  height: $height;
+}
