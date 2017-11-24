@@ -27,3 +27,33 @@
   @include set-size(96px, 76px);
   background: url('../images/phonebook-ico.png');
 }
+
+.truck-glyph {
+  @include set-size(79px, 55px);
+  background: url('../images/truck-ico.png');
+}
+
+.cash-glyph, .cash-glyph-small {
+  @include set-size(71px, 64px);
+  background: url('../images/cash-ico.png');
+}
+
+.cash-glyph-small {
+  @include set-size(56px, 48px);
+  background-size: 56px 48px;
+}
+
+.food-glyph {
+  @include set-size(57px, 36px);
+  background: url('../images/food-ico.jpg');
+}
+
+.man-glyph {
+  @include set-size(34px, 37px);
+  background: url('../images/man-ico.jpg');
+}
+
+.medal-glyph {
+  @include set-size(34px, 50px);
+  background: url('../images/medal-ico.jpg');
+}

@@ -12,8 +12,16 @@ header {
   padding: 20px 0;
 }
 
+.h2 {
+  font-size: $h2-size;
+}
+
 .h3 {
   font-size: $h3-size;
+}
+
+.h4 {
+  font-size: $h4-size;
 }
 
 .center-wrapper {
@@ -117,4 +125,22 @@ header {
       color: #ff0000;
     }
   }
+}
+
+.profit {
+  color: $profit-color;
+}
+
+.loss {
+  color: $loss-color;
+}
+
+.earnings, .expenses, .total-earnings, .business-name {
+  * {
+    font-family: $secondary-font-family;
+  }
+}
+
+.total-earnings {
+  clear: both;
 }
