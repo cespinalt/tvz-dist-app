@@ -36,4 +36,21 @@ $sort-select-height: 39px;
       left: calc(100% - 44px);
     }
   }
+
+  .form-select {
+      @include set-size($sort-select-width, $sort-select-height);
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      color: #000;
+      display: inline-block;
+      font-family: 'Helvetica Neue', Helvetica, sans-serif;
+      height: $sort-select-height;
+      padding-left: 19px;
+      cursor: pointer;
+      border-top: 1px solid $border-default-color;
+      border-bottom: 1px solid $border-default-color;
+      border-left: 2px solid #dbdbdb;
+      border-right: 2px solid #dbdbdb;
+      font-family: $primary-font-family;
+  }
 }

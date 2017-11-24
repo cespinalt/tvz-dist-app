@@ -1,0 +1,53 @@
+$table-header-border-color: #bbbaba;
+$header-font-color: #999;
+.cart-flow {
+  width: 500px;
+  border-collapse: collapse;
+  border-bottom: 1px solid $table-header-border-color;
+
+  thead {
+    td {
+      border-top: 1px solid $table-header-border-color;
+      border-bottom: 1px solid $table-header-border-color;
+      padding: 10px 0;
+    }
+
+    p {
+      color: $header-font-color;
+    }
+  }
+
+  tbody {
+    td {
+      border-top: 1px solid $table-header-border-color;
+    }
+  }
+
+  .discounted-price {
+    color: #ff0000;
+  }
+
+  .product-detail {
+    & > div {
+      @include float-element(left, calc(100% - 39px));
+    }
+
+    img {
+      @include float-element(left, 29px);
+      margin-right: 10px;
+    }
+
+    p {
+      @include float-element(left, calc(100% - 39px));
+      margin: 0;
+    }
+
+    .product-name {
+      font-weight: 700;
+    }
+  }
+
+  .align-horz {
+    @extend %center-elements;
+  }
+}
