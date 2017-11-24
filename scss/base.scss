@@ -47,4 +47,74 @@ header {
 
 .main-content {
   margin-bottom: 30px;
+
+  header {
+    @extend %clearfix;
+    margin-bottom: 21px;
+    padding: 0 28px;
+  }
+}
+
+.section-name {
+  @extend %center-elements;
+}
+
+.pull-left {
+  @include float-element(left, auto);
+}
+
+.pull-right {
+  @include float-element(right, auto);
+}
+
+.co-total-wrapper {
+  @include fixed-width(343px);
+
+  p {
+    @include fixed-width(100%);
+    border-bottom: 1px solid $border-default-color;
+    padding-bottom: 13px;
+  }
+
+  .category {
+    font-weight: 700;
+  }
+
+  .total {
+    @include float-element(right, 50px);
+  }
+}
+
+.fancy-checkbox {
+  @include float-element(left, 32px);
+  @include set-size(32px, 32px);
+  border: 2px solid $border-default-color;
+  background: #FFF;
+  margin-right: 15px;
+}
+
+.payment-wrapper {
+  margin-top: 92px;
+  padding-bottom: 30px;
+  p {
+    border-bottom: none;
+    width: 170px;
+    color: #999999;
+  }
+
+  .form {
+    p {
+      font-weight: 700;
+      margin: 0;
+      padding: 0;
+    }
+
+    select {
+      margin-bottom: 40px;
+    }
+
+    .total-price {
+      color: #ff0000;
+    }
+  }
 }
