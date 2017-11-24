@@ -14,4 +14,8 @@ button {
   &.large {
     @include fixed-width(349px);
   }
+
+  &.resizable {
+    @include fixed-width(100%);
+  }
 }

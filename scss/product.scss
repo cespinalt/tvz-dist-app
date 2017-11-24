@@ -1,0 +1,37 @@
+$product-name-color: #333333;
+$product-item-color: #bbbaba;
+
+.products-container {
+  @extend %center-elements;
+  clear: both;
+  display: flex;
+  margin-bottom: 23px;
+  justify-content: space-evenly;
+
+  .product-item {
+    @include fixed-width(206px);
+    background: #FFF;
+    border: 1px solid $product-item-color;
+    min-height: 262px;
+    padding: 15px;
+
+    i {
+      margin-top: 37px;
+    }
+  }
+
+  .product-thumb {
+    margin-bottom: 14px;
+  }
+
+  .product-name, .product-quantity {
+    color: $product-name-color;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .product-quantity {
+    margin-bottom: 12px;
+    font-weight: 400;
+  }
+}

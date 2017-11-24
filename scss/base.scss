@@ -47,4 +47,18 @@ header {
 
 .main-content {
   margin-bottom: 30px;
+
+  header {
+    @extend %clearfix;
+    margin-bottom: 21px;
+    padding: 0 28px;
+  }
+}
+
+.section-name {
+  @extend %center-elements;
+}
+
+.pull-right {
+  @include float-element(right, auto);
 }
