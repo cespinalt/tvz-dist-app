@@ -11,11 +11,40 @@ button {
     font-weight: 500;
   }
 
+  &.danger {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      color-stop(0, #FF161A),
+      color-stop(0.53, #AD171C)
+    );
+    background-image: -o-linear-gradient(bottom, #FF161A 0%, #AD171C 53%);
+    background-image: -moz-linear-gradient(bottom, #FF161A 0%, #AD171C 53%);
+    background-image: -webkit-linear-gradient(bottom, #FF161A 0%, #AD171C 53%);
+    background-image: -ms-linear-gradient(bottom, #FF161A 0%, #AD171C 53%);
+    background-image: linear-gradient(to bottom, #FF161A 0%, #AD171C 53%);
+    color: #fff;
+  }
+
+  &.clear {
+    background: #FFF;
+    border: 1px solid $border-default-color;
+  }
+
   &.large {
     @include fixed-width(349px);
   }
 
   &.resizable {
     @include fixed-width(100%);
+  }
+
+  &.small {
+    border-radius: 3px;
+    color: #999;
+    text-transform: none;
+    font-family: $secondary-font-family;
+    @include  set-size(78px, 31px);
   }
 }
