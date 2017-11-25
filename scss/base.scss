@@ -144,3 +144,88 @@ header {
 .total-earnings {
   clear: both;
 }
+
+.contact-card-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.contact-card {
+  border: 1px solid $border-default-color;
+  @include set-size(424px, 360px);
+  @include fixed-width(424px);
+  border-radius: 2px;
+  flex-grow: 1;
+  margin-bottom: 15px;
+
+  & * {
+    font-family: $secondary-font-family;
+  }
+
+  .contact-detail {
+    @include fixed-width(90%);
+    @extend %center;
+
+    & > div {
+      @include float-element(right, 40%);
+      color: #999;
+
+      &:first-of-type {
+        @include float-element(left, 60%);
+      }
+    }
+  }
+
+  .weekly-payment-summary {
+    @include fixed-width(90%);
+    @extend %center;
+    @extend %clearfix;
+  }
+
+  .payment-row {
+    @extend %clearfix;
+    border-bottom: 1px solid $border-default-color;
+    padding-top: 5px;
+
+    &:first-of-type {
+      border-top: 1px solid $border-default-color;
+    }
+
+    p {
+      color: #999;
+    }
+
+    button {
+      color: #fff;
+      position: relative;
+      top: 8px;
+    }
+  }
+
+  .shop-btn-wrapper {
+    text-align: right;
+    @include fixed-width(90%);
+    @extend %center;
+    margin-top: 7px;
+    button {
+      color: #fff;
+    }
+  }
+}
+
+.contact-card-header {
+  @include fixed-width(90%);
+  @extend %center;
+  @extend %clearfix;
+  border-bottom: 1px solid $border-default-color;
+  padding-top: 5px;
+
+  .contact-name {
+    @extend %inline-block;
+  }
+
+  .clear {
+    position: relative;
+    top: 8px;
+  }
+}
