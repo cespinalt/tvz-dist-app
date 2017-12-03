@@ -1,0 +1,23 @@
+{
+  "name": "tvz-dist-app",
+  "version": "1.0.0",
+  "description": "tvz-dist-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cespinalt/tvz-dist-app.git"
+  },
+  "author": "Carlos Espinal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cespinalt/tvz-dist-app/issues"
+  },
+  "homepage": "https://github.com/cespinalt/tvz-dist-app#readme",
+  "devDependencies": {
+    "react": "^16.1.1",
+    "styled-components": "^2.2.3"
+  }
+}

@@ -1,13 +1,6 @@
-$start-item-vert-border-color: #bbbaba;
-$start-item-left-border-color: #d7d6d6;
-$start-item-right-border-color: #cbcaca;
-
-.start-item {
+.login-item {
   @extend %center-elements;
-  @include float-element(left, 306px);
-  border-left: 1px solid $start-item-left-border-color;
-  border-right: 1px solid $start-item-right-border-color;
-  border: 1px solid $start-item-vert-border-color;
+  @include set-size(306px, auto);
   padding: 60px;
 
   p {

@@ -1,0 +1,34 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+      "plugin:flowtype/recommended",
+      "plugin:react/recommended",
+      "prettier",
+      "prettier/flowtype",
+      "prettier/react"
+    ],
+    "parserOptions": {
+        "sourceType": "module"
+    },
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "bracketSpacing": false,
+          "jsxBracketSameLine": true,
+          "parser": "flow",
+          "singleQuote": true,
+          "trailingComma": "all"
+        },
+        "@format"
+      ]
+    },
+    "plugins": [
+      "flowtype",
+      "react",
+      "prettier"
+    ]
+}
