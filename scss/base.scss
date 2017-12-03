@@ -149,13 +149,12 @@ header {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 .contact-card {
   border: 1px solid $border-default-color;
   @include set-size(424px, 360px);
-  @include fixed-width(424px);
   border-radius: 2px;
-  flex-grow: 1;
   margin-bottom: 15px;
 
   & * {

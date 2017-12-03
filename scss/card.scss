@@ -1,0 +1,15 @@
+$card-bg-color: #ffffff;
+$card-vert-border-color: #bbbaba;
+$card-right-border-color: #cbcaca;
+$card-left-border-color: #d7d6d6;
+$card-border-thickness: 1px;
+$card-border-style: solid;
+
+
+.card-root {
+  @extend %center-elements;
+  background: $card-bg-color;
+  border: $card-border-thickness $card-border-style $card-vert-border-color;
+  border-left: 1px solid $card-left-border-color;
+  border-right: 1px solid $card-right-border-color;
+}
